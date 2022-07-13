@@ -9,11 +9,14 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="container d-flex justify-content-between mt-5">
-
-    <h1>Hello, Api!</h1>
-    <a href="{{ route('admin.index') }}">Home</a>
-  </div>
   
+  <div id="app">
+
+  </div>
+
+
+
+
+  <script src="{{ asset('js/front.js') }}"></script>
 </body>
 </html>
