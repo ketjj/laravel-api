@@ -1,6 +1,17 @@
 <template>
-    <div class="container d-flex justify-content-between mt-5">   
+    <div class="container mt-5">   
       <h1>Hello, Api!</h1>
+
+      <h5>Here are all the posts!</h5>
+
+        <div 
+        v-for="post in posts"
+        :key="post.id" class="my-4">  
+
+        <h3>{{ post.title}}</h3>
+        <div>{{ post.content }}</div>
+        </div>
+
     </div>
   
 </template>

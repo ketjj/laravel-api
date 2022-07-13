@@ -1949,17 +1949,17 @@ var render = function render() {
   var _vm = this,
       _c = _vm._self._c;
 
-  return _vm._m(0);
+  return _c("div", {
+    staticClass: "container mt-5"
+  }, [_c("h1", [_vm._v("Hello, Api!")]), _vm._v(" "), _c("h5", [_vm._v("Here are all the posts!")]), _vm._v(" "), _vm._l(_vm.posts, function (post) {
+    return _c("div", {
+      key: post.id,
+      staticClass: "my-4"
+    }, [_c("h3", [_vm._v(_vm._s(post.title))]), _vm._v(" "), _c("div", [_vm._v(_vm._s(post.content))])]);
+  })], 2);
 };
 
-var staticRenderFns = [function () {
-  var _vm = this,
-      _c = _vm._self._c;
-
-  return _c("div", {
-    staticClass: "container d-flex justify-content-between mt-5"
-  }, [_c("h1", [_vm._v("Hello, Api!")])]);
-}];
+var staticRenderFns = [];
 render._withStripped = true;
 
 
