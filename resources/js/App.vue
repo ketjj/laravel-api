@@ -7,7 +7,28 @@
 
 <script>
 export default {
- name: 'App'
+ name: 'App',
+
+ data(){
+  return{
+    apiUrl: 'http://127.0.0.1:8000/api/posts',
+    posts: null
+  }
+ },
+ methods:{
+  getApi(){
+    // console.log('Hello,Api')
+    axios.get(this.apiUrl)
+    .then(res =>{
+      this.posts = res.data;
+      console.log(res.data);
+    })
+  }
+ },
+
+ mounted(){
+  this.getApi();
+ }
 }
 </script>
 
