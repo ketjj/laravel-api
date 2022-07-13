@@ -1,0 +1,30 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+th{
+  background-color: rgb(255, 129, 127);
+  margin: 0 10px 0 10px;   
+  
+}
+tr{
+  height: 60px;  
+}
+td,
+.k_head{
+  padding-left: 20px;
+}
+
+.k_button{
+  margin-right:20px;
+  padding: 10px 30px;
+}
+
+.k_table{
+  width:100%;
+}
